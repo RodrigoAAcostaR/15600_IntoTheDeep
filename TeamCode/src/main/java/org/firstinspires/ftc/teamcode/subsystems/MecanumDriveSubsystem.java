@@ -75,7 +75,7 @@ public class MecanumDriveSubsystem extends SubsystemBase {
 
         drive.setWeightedDrivePower(
                 new Pose2d(
-                        isInverted ? input.getX() : -input.getX(),
+                        isInverted ? -input.getX() : input.getX(),
                         isInverted ? input.getY() : -input.getY(),
                         //input.getX(),
                         //input.getY(),

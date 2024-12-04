@@ -14,8 +14,8 @@ public class MecanumDriveCommand extends CommandBase {
     public MecanumDriveCommand(MecanumDriveSubsystem drive, DoubleSupplier leftY,
                                DoubleSupplier leftX, DoubleSupplier rightX) {
         this.drive = drive;
-        this.leftX = leftX;
-        this.leftY = leftY;
+        this.leftX = leftY;
+        this.leftY = leftX;
         this.rightX = rightX;
 
         addRequirements(drive);

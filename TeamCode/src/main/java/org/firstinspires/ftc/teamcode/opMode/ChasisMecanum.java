@@ -20,7 +20,7 @@ public class ChasisMecanum extends CommandOpMode {
     @Override
     public void initialize() {
         SampleMecanumDrive sampleMecanumDrive = new SampleMecanumDrive(hardwareMap);
-        MecanumDriveSubsystem driveSystem = new MecanumDriveSubsystem(sampleMecanumDrive, true, false);
+        MecanumDriveSubsystem driveSystem = new MecanumDriveSubsystem(sampleMecanumDrive, false, false);
         GamepadEx gamepadDriver = new GamepadEx(gamepad1);
 
         driveSystem.setDefaultCommand(new MecanumDriveCommand(
